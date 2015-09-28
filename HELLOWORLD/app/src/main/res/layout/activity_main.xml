@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingBottom="12dp"
+    android:background="#00620b"
+
+
+    >
+
+    <TextView android:text="Cepria Cua Abe" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <TextView android:text="HELLO WORLD!" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:id="@+id/textView1"
+            android:textSize="40dp"
+            android:textColor="@android:color/white"
+            android:background="#00620b"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-1.5in"
+            android:layout_marginBottom="25dp"/>
+
+        <ImageView
+            android:layout_width="420dp"
+            android:layout_height="366dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/no_profile3"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginBottom="-500dp"
+            android:baselineAlignBottom="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
