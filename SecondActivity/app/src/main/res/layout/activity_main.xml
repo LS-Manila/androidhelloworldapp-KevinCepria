@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="4dp"
+android:paddingRight="4dp"
+android:paddingBottom="8dp" tools:context=".MainActivity"
+android:weightSum="1"
+android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Second Activity"
+    android:padding="10dp"
+    android:textSize="23sp"
+    android:textStyle="normal|bold"
+    android:layout_gravity="center_horizontal"
+    android:textColor="#025e10" />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#025e10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter The Day"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="6dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:id="@+id/EditText"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter The Month"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView1"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/EditText"
+        android:layout_marginLeft="6dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:inputType="number"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:id="@+id/EditText1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter The Year (XXXX)"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView2"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/EditText1"
+        android:layout_marginLeft="6dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:inputType="number"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:id="@+id/EditText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPUTE"
+        android:textColor="#025e10"
+        android:textStyle="normal|bold"
+        android:background="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/EditText2"
+        android:layout_centerInParent="true"
+        android:id="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/extra"
+        android:text="KJC Coding"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+</LinearLayout>

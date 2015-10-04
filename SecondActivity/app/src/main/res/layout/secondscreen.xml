@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="8dp" tools:context=".MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:padding="10dp"
+        android:textSize="23sp"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#025e10" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#025e10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THE DATE IS A ..."
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView1"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRY ANOTHER DATE"
+            android:textColor="#025e10"
+            android:textStyle="normal|bold"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:id="@+id/button1"
+            android:layout_marginBottom="119dp"
+            android:layout_above="@+id/extra"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/extra"
+            android:text="KJC Coding"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+             />
+    </RelativeLayout>
+
+</LinearLayout>
